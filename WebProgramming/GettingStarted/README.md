@@ -9,7 +9,7 @@ select the most permissive one.
 
 Add picture: <img src=""> element in <body>
 Picture path: to go up one directory use .., to go down one directory use 
-/_dir_name/_dir_name/..., at the end speficy the full image name 
+/_dir_name/_dir_name/..., at the end specify the full image name 
 .../_picture.png
 
 
@@ -86,7 +86,7 @@ I don't think it is very important.
 JavaScript is a dynamic programming language, more similar to Python then
 to Java.
 
-Scripts are put into a seperate folder and then called into the HTML 
+Scripts are put into a separate folder and then called into the HTML 
 document with an element called <script src="">. Put the element at the 
 bottom of <body> to avoid problems with loading the script before the 
 rest of the document.
@@ -110,7 +110,7 @@ You need web hosting, a file space on a web server, and domain name, a
 unique address from a domain register.
 
 To transfer files to a remote web server, you will need a program that 
-impmenets the File Transfer Protocol (FTP).
+implements the File Transfer Protocol (FTP).
 
 Some free services for hosting are: Neocities, Blogger and WordPress.
 
@@ -120,29 +120,3 @@ Free online tools that allow you to publish a web site are: GitHub
 Publishing via GitPages source: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website
 
 Additional deployment details on CodeCademy source: https://www.codecademy.com/learn/deploy-a-website
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
