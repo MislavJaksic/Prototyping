@@ -13,7 +13,7 @@ The construct is called an element.
 
 Elements can be nested.
 
-Elements without the closing tag nad content are called empty elements.
+Elements without the closing tag and content are called empty elements.
 
 Elements can have attributes. Example: <p class="note">Hello world!</p>
 
@@ -25,7 +25,7 @@ The head's job is to contain metadata about the document.
 
 Putting content in it's attributes can optimize search results. (Open Graph 
 Data)[http://ogp.me/] is a metaprotocol which provides richer metadata for social networks.
-Twitter has a very similar proprietery metadata.
+Twitter has a very similar proprietary metadata.
 
 You can display a favicon (favorite icon) by setting the path of 
 <link href=""> in the <head> to an image.
@@ -51,15 +51,15 @@ correctly format the text. When linking to none HTML resources, let readers
 know what is behind the link: (PDF, 10MB), (requires Flash) or 
 (stream opens up in another tab).
 
-Use download attribute wh nelinking to a download.
+Use download attribute when linking to a download.
 
-Construct the nevigattion menu at the top or to the sides.
+Construct the navigation menu at the top or to the sides.
 
 When linking to an email use mailto: schema.
 
 ### Advanced HTML formatting
 
-Description lists: <dl> in which there are >description term and description description.
+Description lists: <dl> in which there are description terms and description descriptions.
 <dl>
   <dt>A</dt>
   <dd>Apple</dd>
@@ -67,7 +67,7 @@ Description lists: <dl> in which there are >description term and description des
   <dd>Bus</dd>
 </dl>
 Blockquote: 
-Inline quation:
+Inline quotation:
 Citation:
 Abbreviation:
 Contact details: <address>
@@ -76,7 +76,7 @@ Subscript: <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4<
 Computer code: <code>, <pre>, <var>, <kbd>, <samp>
 Time and dates: <time>
 
-### HTML sections
+### HTML page structure
 
 Header: <header>.
 Navigation bar: <nav>.
@@ -86,17 +86,35 @@ Footer: <footer>.
 
 There are a lot of HTML elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
+Commonly used elements are:
+<main>
+<article>
+<section>
+<aside>
+<header>
+<nav>
+<footer>
+
 If you can't find an appropriate semantic element, use <span> 
 (inline element) or <div> (block element) and mark them with a unique 
 class="" to mark them. Use these sparingly as they are non semantic 
 elements that clutter HTML.
 
-Stopped at: Line breaks and horizontal rules
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+Line break element: <br>
+Horizontal line (rule): <hr>
 
+A website needs to be planned, its content divided between pages and with
+consistent navigation and search layouts.
 
+### HTML debugging
 
+HTML parsing and interpreting is extermely permissive, meaning that 
+mistakes cannot be automatically detected.
 
+Get familiar with browser developer tools: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools
 
+HTML can be validated using: https://validator.w3.org/
 
+### HTML exercises and projects
 
+Mark up a letter: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter
