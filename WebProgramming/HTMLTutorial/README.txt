@@ -118,3 +118,28 @@ HTML can be validated using: https://validator.w3.org/
 ### HTML exercises and projects
 
 Mark up a letter: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter
+
+## Multimedia and embedding
+
+Never point to an image hosted by another website. Make sure you don't host copyrighted images.
+
+It is possible to add audio and video to a page, but when you have to do it, research it.
+
+It is possible to add YouTube video and Google Maps into HTML. Use <iframe> element.
+With <iframe>, you can embed other web documents into your website.
+You should load such content with JavaScript after the main content of your page is loaded to reduce loading times.
+There are security concerns that have been resolved by doing the following:
+- pages can be forbbiden from being embedded into other pages by setting a CSP directive.
+- embed content only if necessary.
+- use HTTPS, for which you need a certificate, but you can get one from https://letsencrypt.org/
+- make sure all elements have an attribute 'sandbox' to make sure embedded content can do as little harm as possible.
+- set a content security policy which uses HTTP headers. X-Frame-Options.
+
+Possible to include vector and raster graphics into HTML.
+
+Resolution switching: different image size depending on the size of the browser.
+Add 'srcset' and 'sizes' attributes to img element.
+'srcset' provides alternative images, 'sizes' states screen size conditions under which a picture should be displayed. Once a condtions is met, all other are ignored.
+Use developer tools to help you out figure these numbers out.
+
+If you want to crop images instead of smaller ones, use the <picture> element.
