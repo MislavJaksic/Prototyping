@@ -93,3 +93,7 @@ Resolution switching: different image size depending on the size of the browser.
 displayed. Once a conditions is met, all other are ignored.
 
 Use developer tools to help you figure out resolution numbers to input into 'srcset' and 'sizes' attributes.
+
+### HTML forms
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms
