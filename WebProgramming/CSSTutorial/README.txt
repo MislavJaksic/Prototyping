@@ -48,11 +48,11 @@ relationship.
 
 Attribute selectors: uses [] syntax to select elements based on their values or name.
 
-Pseudo-selectors:
-Pseudo-element:
+Pseudo-selectors: written in the :keyword format
+Pseudo-element: written in the ::keyword format
 
-Combinators:
-Multiple selectors:
+Combinators: select based on the child parent relationship.
+Multiple selectors: multiple selectors can be assigned to the same declaration block.
 
 ### CSS values and units
 
