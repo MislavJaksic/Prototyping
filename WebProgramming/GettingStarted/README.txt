@@ -64,8 +64,12 @@ Styles: files that end with with .css. Made of CSS rulesets.
 CSS rulesets: made of selectors and declaration block.
               also called a rule.
 
-Selectors: different types.
-           selectes HTML elements to be styled.
+Selectors: different types: tag/element - based on HTML element                 - eg. p
+                            ID - based on the unique value of attribute id      - eg. #my-id
+			    class - based on the value of attribute class       - eg. .my-class
+			    attribute - based on if an element has an attribute - eg. img[src]
+			    pseudo-class - based on a specific state            - eg. a:hover
+           selects HTML elements to be styled.
 
 Declaration block: made of {} and declarations in the brackets.
 
