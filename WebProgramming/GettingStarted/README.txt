@@ -90,9 +90,15 @@ Other CSS properties: width
 		      color
 		      text-shadow
 		      display
+		      
+Block level: it takes space on the page (and can have styles applied to it)
+             for example, <body>
+Inline element: don't take up space on a page; give them block level behaviour with {display: block}
+                for example, <img> 
 
 Stopped at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
-
+           at Conclusion!
+	   
 ### JavaScript
 
 JavaScript is a dynamic programming language, more similar to Python then to Java.
