@@ -12,9 +12,14 @@ body {                      /* make body: */
   border: 5px solid black;  /* set a border around the padding */
 }
 
-h1 {
-  margin: 0;
-  padding: 20px 0;    
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+h1 {                             /* make headerOne: */
+  margin: 0;                     /* overrides browser default margin */
+  padding: 20px 0;               /* padding */
+  color: #00539F;                /* color */
+  text-shadow: 3px 3px 1px black;/* values: horizontal offset, vertical offset, blur radius, color of the shadow */
+}
+
+img {            /* centers the image */
+  display: block;/* give block level behaviour */
+  margin: 0 auto;
 }
