@@ -4,75 +4,46 @@ Source: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_
 
 ### Content
 
-Images: use Google images and select tools in Chrome, under Usage rights
-select the most permissive one.
+Images: find them using [Google images](https://www.google.com/imghp?hl=en&tab=wi); after searching select Tools->Usage rights and
+select the most permissive licence.
+        <img src="path/to/picture"> element embeddes the picture.
 
-Add picture: <img src=""> element in <body>
-Picture path: to go up one directory use .., to go down one directory use 
-/_dir_name/_dir_name/..., at the end specify the full image name 
-.../_picture.png
-
-
-Fonts: use Google styles and select a font. At the bottom, click Family
+Fonts: use [Google fonts](https://fonts.google.com/); select a font then at the bottom, click Family
 Selected and then select a specific font. Copy its links.
+
+### Paths
+
+Go up one directory:                    ..
+Go down one directory:                  /_dir_name/_dir_name/...
+At the end specify the full image name: .../_picture.png
 
 ### HTML
 
 Hypertext Markup Language. Markup languages are not programming languages, 
-they only say how websites display content.
+they only say how websites should display content.
 
-HTML consist of elements, marked with <>.
+HTML is made up of elements: <tag att="value">content</tag>.
 
-Element is made up of an opening and closing tag and content between those
-tags.
+An element is made up of: an opening <> and closing tag </>,
+                          content between those tags,
+			  attributes and their values.
 
-Tag is a name of the HTML element such as <p> or </b>.
+Tag: name of the HTML element, such as <p> or <b>.
 
-There are opening tags, <p>, and closing tags, </p>.
-
-Elements can have attributes which look like <p class="my-note">.
+Attributes: written in the opening tag, like <p class="my-note">.
 
 Elements can be nested.
 
-Empty elements are elements that don't have content (and because of that 
+Empty elements: elements that don't have content (and because of that 
 don't have a closing tag either) such as <img src="sub_directory/img.png">.
 
-```html
-<!DOCTYPE html> <!-- All HTML pages must have it -->
-<html> <!-- Wraps all the elements -->
-  <head> <!-- Put everything here that isn't content which is going to be presented -->
-    <meta charset="utf-8"> <!-- Always set it to utf-8 -->
-    <title>My test page</title> <!-- Title of the browser tab -->
-  </head>
-  <body> <!-- Put all the content here -->
-    <img src="images/mozilla_logo.png" alt="A flaming fox surrounding the Earth.">
-  </body>
-</html>
-```
-
-Add headings, paragraphs, lists and links to the page.
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1>Main title</h1>
-    <img src="images/mozilla_logo.png" alt="A flaming fox surrounding the Earth.">
-    <h2>Smaller title</h2>
-	<p>A small paragraph. A list follows below:</p>
-	<ul>
-	  <li>First bullet point</li>
-	  <li>Second bullet point</li>
-	  <li>The link is below:</li>
-	</ul>
-	<a href="https://en.wikipedia.org/wiki/Mozilla">Mozzila on Wikipedia</a>
-  </body>
-</html>
-```
+Example elements: headings <h1>..<h7>,
+                  paragraphs <p>,
+		  bullet point (unordered) lists <ul>,
+		  numerated (ordered) lists <ol>,
+		  list items (members) <li>,
+		  annotation (link) to a page <a>,
+		  and many other are all valid HTML emelents.
 
 ### CSS
 
