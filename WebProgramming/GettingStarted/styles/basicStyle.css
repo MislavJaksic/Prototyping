@@ -1,5 +1,20 @@
 p {                        /* make paragraps: */
   color: red;              /* red */
-  width: 500px;            /* width */
-  border: 1px solid black; /* border */
+  width: 500px;            /* forces width to be that big */
+  border: 1px solid black; /* creates a line that is thick around the content */
+}
+
+body {                      /* make body: */
+  width: 600px;             /* force width */
+  margin: 0 auto;           /* creates space around the border; values effect sides depending on how many values you input; you can specify up to four values: top, right, bottom, left*/
+  background-color: #FF9500;/* set background */
+  padding: 0 20px 20px 20px;/* similar to margin, but creates space around the content; four values: top, right, bottom, left  */
+  border: 5px solid black;  /* set a border around the padding */
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
 }
