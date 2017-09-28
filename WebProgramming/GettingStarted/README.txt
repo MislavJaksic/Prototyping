@@ -4,12 +4,10 @@ Source: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_
 
 ### Content
 
-Images: find them using [Google images](https://www.google.com/imghp?hl=en&tab=wi); after searching select Tools->Usage rights and
-select the most permissive licence.
+Images: find them using [Google images](https://www.google.com/imghp?hl=en&tab=wi); after searching select Tools->Usage rights and select the most permissive licence.
         <img src="path/to/picture"> element embeddes the picture.
 
-Fonts: use [Google fonts](https://fonts.google.com/); select a font then at the bottom, click Family
-Selected and then select a specific font. Copy its links.
+Fonts: use [Google fonts](https://fonts.google.com/); select a font then at the bottom, click Family Selected and then select a specific font. Copy its links.
 
 ### Paths
 
@@ -17,10 +15,22 @@ Go up one directory:                    ..
 Go down one directory:                  /_dir_name/_dir_name/...
 At the end specify the full image name: .../_picture.png
 
+### Website structure
+
+website/
+| --> index.html 
+| --> images/
+|     | --> imageOne.jpg
+|     | --> imageTwo.jpg 
+| --> styles/
+|     | --> stylesSheet.css
+| --> scripts/
+|     | --> scriptOne.js
+|     | --> scriptTwo.js
+
 ### HTML
 
-Hypertext Markup Language. Markup languages are not programming languages, 
-they only say how websites should display content.
+Hypertext Markup Language. Markup languages are not programming languages, they only say how websites should display content.
 
 HTML is made up of elements: <tag att="value">content</tag>.
 
@@ -34,8 +44,7 @@ Attributes: written in the opening tag, like <p class="my-note">.
 
 Elements can be nested.
 
-Empty elements: elements that don't have content (and because of that 
-don't have a closing tag either) such as <img src="sub_directory/img.png">.
+Empty elements: elements that don't have content (and because of that don't have a closing tag either) such as <img src="sub_directory/img.png">.
 
 Example elements: headings <h1>..<h7>,
                   paragraphs <p>,
@@ -47,20 +56,16 @@ Example elements: headings <h1>..<h7>,
 
 ### CSS
 
-Cascading Style Sheets. A style sheet language. Applies styles to HTML
-elements.
+Cascading Style Sheets. A style sheet language. Applies styles to HTML elements. Takes care of the look and feel of a web page.
 
-I don't think it is very important.
+Stopped at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
 
 ### JavaScript
 
-JavaScript is a dynamic programming language, more similar to Python then
-to Java.
+JavaScript is a dynamic programming language, more similar to Python then to Java.
 
-Scripts are put into a separate folder and then called into the HTML 
-document with an element called <script src="">. Put the element at the 
-bottom of <body> to avoid problems with loading the script before the 
-rest of the document.
+Scripts: put them into a separate folder.
+         called them into the HTML document with an element called <script src="">. Put the element at the bottom of <body> to avoid problems with loading the script before the rest of the document.
 
 Look up Document Object Model (DOM) API.
 
