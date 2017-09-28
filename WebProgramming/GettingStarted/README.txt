@@ -78,7 +78,18 @@ Declaration: made of a property and a property value.
 	     
 Property: ways in which you can style an element.
 
-Property value: chooses one out of many possible apperances. 
+Property value: chooses one out of many possible apperances.
+
+Think about CSS in terms of boxes. The boxes in the box model are:
+- padding - space around the content
+- border - solid line just outside of padding
+- margin - space around the outside of the element
+
+Other CSS properties: width
+                      background-color
+		      color
+		      text-shadow
+		      display
 
 Stopped at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
 
