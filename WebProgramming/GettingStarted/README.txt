@@ -15,7 +15,7 @@ Go up one directory:                    ..
 Go down one directory:                  /_dir_name/_dir_name/...
 At the end specify the full image name: .../_picture.png
 
-### Website structure
+### Dealing with files (Website structure)
 
 website/
 | --> index.html 
@@ -48,8 +48,8 @@ Empty elements: elements that don't have content (and because of that don't have
 
 Example elements: headings <h1>..<h7>,
                   paragraphs <p>,
-		  bullet point (unordered) lists <ul>,
-		  numerated (ordered) lists <ol>,
+		  unordered (bullet point) lists <ul>,
+		  ordered (numerated) lists <ol>,
 		  list items (members) <li>,
 		  annotation (link) to a page <a>,
 		  and many other are all valid HTML emelents.
@@ -57,6 +57,24 @@ Example elements: headings <h1>..<h7>,
 ### CSS
 
 Cascading Style Sheets. A style sheet language. Applies styles to HTML elements. Takes care of the look and feel of a web page.
+
+Styles: files that end with with .css. Made of CSS rulesets.
+        applied to a HTML document with <link href="_path" rel="stylesheet" type="text/css">.
+	
+CSS rulesets: made of selectors and declaration block.
+              also called a rule.
+
+Selectors: different types.
+           selectes HTML elements to be styled.
+
+Declaration block: made of {} and declarations in the brackets.
+
+Declaration: made of a property and a property value.
+             specifies which element's property you want to style (color, widgth, ...).
+	     
+Property: ways in which you can style an element.
+
+Property value: chooses one out of many possible apperances. 
 
 Stopped at https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
 
