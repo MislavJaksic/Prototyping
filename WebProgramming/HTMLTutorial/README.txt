@@ -12,16 +12,14 @@ The construct is called an element.
 </a> is the closing tag.
 href="" is called an attribute.
 
-Elements can be nested. Elements without the closing tag and content are called empty elements. Attributes without a
-value are called boolean attributes.
+Elements can be nested. Elements without the closing tag and content are called empty elements. Attributes without a value are called boolean attributes.
 
 ### HTML <head>
 
 The <head>'s job is to contain metadata about the document, data about the pages contents.
 
 Nesting elements into the <head> and filling them with metadata can optimize search results.
-(Open Graph Data)[http://ogp.me/] is a metaprotocol which provides richer metadata for social networks. Twitter has 
-a very similar proprietary metadata.
+(Open Graph Data)[http://ogp.me/] is a metaprotocol which provides richer metadata for social networks. Twitter has a very similar proprietary metadata.
 
 You can display a favicon (favorites icon) by setting the path of <link href=""> element in the <head> to an image.
 
@@ -29,9 +27,7 @@ You can display a favicon (favorites icon) by setting the path of <link href="">
 
 Inside the anchor element <a href="" title="">, any block of elements can be made into a hyperlink.
 
-Use relative links as much as possible, fill in the attributes and correctly format the text. When linking to other 
-HTML resources, let readers know what is behind the link: (PDF, 10MB), (requires Flash) or
-(stream opens up in another tab).
+Use relative links as much as possible, fill in the attributes and correctly format the text. When linking to other HTML resources, let readers know what is behind the link: (PDF, 10MB), (requires Flash) or (stream opens up in another tab).
 
 Use <download> attribute when linking to a download.
 
@@ -43,19 +39,16 @@ When linking to an email use "mailto: schema".
 
 <header>: a big strip across the top. Main common information about a website usually stays here.
 <nav>: navigation bar is where links to the site's main sections.
-<main>: contains most of the unique content of a given web page, with various content subsections represented by
-<article>, <section>, and <div> elements.
+<main>: contains most of the unique content of a given web page, with various content subsections represented by <article>, <section>, and <div> elements.
 <aside>: sidebar is often where peripheral info, links, quotes are; often placed inside <main>.
-<footer>: across the bottom of the page that generally contains fine print, copyright notices, or contact info.
-Sometimes used for SEO purposes.
+<footer>: across the bottom of the page that generally contains fine print, copyright notices, or contact info. Sometimes used for SEO purposes.
 
 <article>: encloses a block of related content.
 <section>: similar to <article>
 
 There are a lot of HTML elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
-If you can't find an appropriate semantic element, use <span> (inline element) or <div> (block element) and mark
-them with a unique class="" to mark them. Use these sparingly as they are non semantic elements that clutter HTML.
+If you can't find an appropriate semantic element, use <span> (inline element) or <div> (block element) and mark them with a unique class="" to mark them. Use these sparingly as they are non semantic elements that clutter HTML.
 
 A website needs to be planned, its content divided between pages and with consistent navigation and search layouts.
 
@@ -71,13 +64,11 @@ HTML can be validated using: https://validator.w3.org/
 
 Never point to an image hosted by another website. Make sure you don't host copyrighted images.
 
-It is possible to add audio and video to a page. I don't intend to use it often and so I will not research it right
-away.
+It is possible to add audio and video to a page. I don't intend to use it often and so I will not research it right away.
 
 With <iframe>, you can embed other web documents into your web document. This includes YouTube videos and Google Maps.
 
-You should load <iframe> content with JavaScript after the main content of your page is loaded to reduce loading
-times.
+You should load <iframe> content with JavaScript after the main content of your page is loaded to reduce loading times.
 
 <iframe> pose a security problem but it can be solved by doing the following:
 - pages can be forbidden from being embedded into other pages by setting a CSP (content security policy) directive.
@@ -89,8 +80,7 @@ times.
 It is possible to include vector and raster graphics into HTML.
 
 Resolution switching: different image size depending on the size of the browser.
-'srcset' provides alternative images, 'sizes' states screen size conditions under which a picture should be
-displayed. Once a conditions is met, all other are ignored.
+'srcset' provides alternative images, 'sizes' states screen size conditions under which a picture should be displayed. Once a conditions is met, all other are ignored.
 
 Use developer tools to help you figure out resolution numbers to input into 'srcset' and 'sizes' attributes.
 
