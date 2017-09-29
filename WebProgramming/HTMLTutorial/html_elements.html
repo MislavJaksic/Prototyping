@@ -87,12 +87,32 @@
     
     <time datetime="2016-01-20">20 January 2016</time> <!-- A computer readable time is in an attribute -->
     
+    <!-- Image in HTML: -->
+    
+    <img src="image_link"
+         alt="text_description"
+         width="number"
+         height="number"
+         title="hoverover_text">
+    
     <figure>
       <img src="images/mozilla_logo_smaller.png" 
-         alt="Fill this with text that explains why is the image here. It will be displayed when the image cannot be dsiplayed."
-         title="Hover over text">
+         alt="Explain why is the image here; displayed when the image cannot be loaded."
+         title="hoverover_text">
       <figcaption>Text written below the image</figcaption>
     </figure>
+    
+    <!-- Video and audio content: -->
+    
+    <video width="400" height="400"
+           muted controls          <!-- Never include the attribute autoplay/loop -->
+           poster="image_link"
+           preload="auto">
+      <source src="first_video_source" type="video/mp4">
+      <source src="second_video_source" type="video/webm">
+      <p>Fallback content is the video doesn't load.</p>
+    </video>
+    
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/QEllLECo4OM" frameborder="0" allowfullscreen>
     </iframe>
