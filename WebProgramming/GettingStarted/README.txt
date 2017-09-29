@@ -46,12 +46,12 @@ Elements can be nested.
 
 Empty elements: elements that don't have content (and because of that don't have a closing tag either) such as <img src="sub_directory/img.png">.
 
-Example elements: headings <h1>..<h7>,
+Example elements: headings <h1>..<h6>,
                   paragraphs <p>,
                   unordered (bullet point) lists <ul>,
                   ordered (enumerated) lists <ol>,
                   list items (members) <li>,
-                  annotation (link) to a page <a>,
+                  anchor (link) to a page <a>,
                   and many other are all valid HTML elements.
 
 ### CSS
