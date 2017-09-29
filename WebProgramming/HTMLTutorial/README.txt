@@ -35,7 +35,7 @@ Special chars: < is &lt;, > &gt;, " is &quot; and so on.
 
 ### HTML <head>
 
-The <head>'s job is to contain metadata about the document, data about the page's contents.
+<head>: contains metadata about the document, data about the page's contents.
 
 Metadata: charset,
           author and description,
@@ -48,17 +48,23 @@ Metadata: charset,
 
 ### HTML text
 
+Text elements: written in index.html.
+
 ### HTML hyperlinks
 
-Inside the anchor element <a href="" title="">, any block of elements can be made into a hyperlink.
+Anchor: <a href="website_link" title="hoverover_text">link_name</a>
+        any block of elements can be made into a hyperlink.
+	
+Document fragment: link to a specific part of the page, not just the top.
+                   assigned with an id="" attribute.
+		   use <a href="folder/web_page.html#Address"> on <h2 id="Address">City, Street, Number</h2>.
 
-Use relative links as much as possible, fill in the attributes and correctly format the text. When linking to other HTML resources, let readers know what is behind the link: (PDF, 10MB), (requires Flash) or (stream opens up in another tab).
+Tips: use clear link words, don't repeat the URI,
+      use relative links when you can,
+      let readers know what is behind the link (download, file size, ...),
+      use <a href="" download=""> download attribute for downloads.
 
-Use <download> attribute when linking to a download.
-
-Construct the navigation menu at the top or to the sides.
-
-When linking to an email use "mailto: schema".
+Email: use <a href="mailto:email:_address"> mailto schema.
 
 ### HTML page structure
 
