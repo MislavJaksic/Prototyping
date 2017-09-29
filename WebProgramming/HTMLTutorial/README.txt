@@ -2,9 +2,7 @@
 
 Source: https://developer.mozilla.org/en-US/docs/Learn/HTML
 
-### Getting started
-
-### HTML element
+### Getting started (HTML elements)
 
 <a id="">Hello world!</a>
 
@@ -31,9 +29,7 @@ Boolean attributes: attributes without a value.
 					
 Special chars: < is &lt;, > &gt;, " is &quot; and so on.
 
-### Metadata in HTML
-
-### HTML <head>
+### Metadata in HTML (Head)
 
 <head>: contains metadata about the document, data about the page's contents.
 
@@ -66,22 +62,29 @@ Tips: use clear link words, don't repeat the URI,
 
 Email: use <a href="mailto:email:_address"> mailto schema.
 
-### HTML page structure
+### Advanced text
+
+Advanced text elements: written in index.html.
+
+### HTML document and website structure
 
 <header>: a big strip across the top. Main common information about a website usually stays here.
-<nav>: navigation bar is where links to the site's main sections.
-<main>: contains most of the unique content of a given web page, with various content subsections represented by <article>, <section>, and <div> elements.
-<aside>: sidebar is often where peripheral info, links, quotes are; often placed inside <main>.
-<footer>: across the bottom of the page that generally contains fine print, copyright notices, or contact info. Sometimes used for SEO purposes.
+<nav>: navigation bar is where links to the site's main sections are located.
+<main>: for content that is unique to this web page
+        <main> subsections: <article>, <section>, and <div> elements.
+          <article>: encloses a block of related content.
+          <section>: similar to <article>, but wrapps one functionality
+<aside>: peripheral info, links, quotes are; inside <main>.
+<footer>: across the bottom of the page; fine print, copyright notices, or contact info; may be used for SEO purposes.
 
-<article>: encloses a block of related content.
-<section>: similar to <article>
+<div>, <span>: non semantic elements; use only if you have to.
+               uniquely mark them with class"" attribute value.
+               for example, a shopping cart would be wrapped with div.
+	       
+<br>: break line
+<hr>: horizontal rule
 
-There are a lot of HTML elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-
-If you can't find an appropriate semantic element, use <span> (inline element) or <div> (block element) and mark them with a unique class="" to mark them. Use these sparingly as they are non semantic elements that clutter HTML.
-
-A website needs to be planned, its content divided between pages and with consistent navigation and search layouts.
+[HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ### HTML debugging
 
