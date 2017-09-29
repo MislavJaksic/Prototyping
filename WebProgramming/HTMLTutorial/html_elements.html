@@ -141,12 +141,17 @@
                 800px"
          src="images/mozilla_logo_smaller.png">
          
-    <picture>
-      <source media="(max-width: 799px)" srcset="different_picture_due_to_resolution.jpg">
-      <source media="(min-width: 800px)" srcset="default_picture.jpg">
-      <img src="default_picture.jpg" alt="Could be a cropped instead of scaled down picture">
+    <picture> <!-- Solves the art direction problem -->
+      <source media="(max-width: 799px)" 
+              srcset="different_picture_due_to_resolution.jpg"> <!-- Condition -->
+      <source media="(min-width: 800px)"
+              srcset="default_picture.jpg">
+      <img src="default_picture.jpg"
+           alt="A cropped instead of scaled down picture">
     </picture>
     
+    <!-- HTML tables: -->
+  
     <table>
       <tr>
         <td>First table row</td>
