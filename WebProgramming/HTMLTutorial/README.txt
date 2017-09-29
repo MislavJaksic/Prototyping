@@ -124,7 +124,18 @@ Never display copyrighted image.
 
 ### Adding vector graphics
 
-It is possible to include vector and raster graphics into HTML.
+SVG, an XML based language to describe vector images.
+
+<svg>: element for vector images.
+       instead of hard coding them, use an editor such as [Inkscape](https://inkscape.org/en/) or [Illustrator].
+       <circle>, <rect>: create simple objects.
+       <feColourMatrix>, <animate>, <mask>: advanced SVG features.
+
+[Prepare Inkscape for the web](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html)
+
+Stopped at Adding SVG to your pages
+
+### Responsive images
 
 Resolution switching: different image size depending on the size of the browser.
 'srcset' provides alternative images, 'sizes' states screen size conditions under which a picture should be displayed. Once a conditions is met, all other are ignored.
