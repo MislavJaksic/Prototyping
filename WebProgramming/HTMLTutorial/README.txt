@@ -111,20 +111,18 @@ Never display copyrighted image.
 
 ### Other embedding technologies
 
-Never point to an image hosted by another website. Make sure you don't host copyrighted images.
+<iframe>: can embed Youtube video, Google Maps and many other services. Go to a website press Share->Embed to get the link.
+          set src="" with JavaScript after the rest of the page has been loaded to improve laoding time.
 
-It is possible to add audio and video to a page. I don't intend to use it often and so I will not research it right away.
-
-With <iframe>, you can embed other web documents into your web document. This includes YouTube videos and Google Maps.
-
-You should load <iframe> content with JavaScript after the main content of your page is loaded to reduce loading times.
-
-<iframe> pose a security problem but it can be solved by doing the following:
-- pages can be forbidden from being embedded into other pages by setting a CSP (content security policy) directive.
+<iframe> security risks and solutions:
+- clickjacking: embed an invisible <iframe> to steal user interaction
+- set CSP directive to forbid your page from being embedded
 - embed content only if necessary.
-- use HTTPS, for which you will need a certificate, but you can get one from https://letsencrypt.org/
-- make sure all elements have an attribute 'sandbox' to make sure embedded content can do as little harm as possible.
-- set a CSP which uses HTTP headers. X-Frame-Options.
+- use HTTPS, for which you need a certificate; get one from [Letsencrypt](https://letsencrypt.org/)
+- set the attribute sandbox="" then add permissions if necessery
+- configure the Content Security Policy (CSP) which uses HTTP headers. X-Frame-Options HTTP header.
+
+### Adding vector graphics
 
 It is possible to include vector and raster graphics into HTML.
 
