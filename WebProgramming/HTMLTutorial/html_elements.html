@@ -130,12 +130,14 @@
     </iframe>
   
     <!-- Adding vector graphics: -->
+  
+    <!-- Responsive images: -->
     
-    <img srcset="browser_chooses.jpg 320w,
+    <img srcset="browser_chooses.jpg 320w, <!-- Alternative image resolutions --> 
                  between_these.jpg 480w,
                  images.jpg 800w"
-         sizes="(max-width: 320px) 280px,
-                (max-width: 480px) 440px,
+         sizes="(max-width: 320px) 280px, <!-- Screen size conditions point to image resolution in srcset --> 
+                (max-width: 480px) 440px, <!-- Once a conditions is met, all others are ignored --> 
                 800px"
          src="images/mozilla_logo_smaller.png">
          
