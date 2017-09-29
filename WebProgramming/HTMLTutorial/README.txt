@@ -143,8 +143,11 @@ Resolution switching problem: at what resolution do you switch to a smaller imag
 
 Responsive images: images that answer both problems.
                    in <img> attribute sizes="" sets conditions and srcset="" provides alternative images.
+                   use the attributes to save bandwidth and loading time.
+		   use [developer tools](https://developer.mozilla.org/en/US/docs/Learn/Common_questions/What_are_browser_developer_tools) to help you figure out the correct resolution numbers to input into 'srcset' and 'sizes' attributes.
+		   art direction is solved with the <picture> element, which wraps <img>.
 
-Use developer tools to help you figure out resolution numbers to input into 'srcset' and 'sizes' attributes.
+[Responsive images tutorial](https://cloudfour.com/thinks/responsive-images-101-definitions/)
 
 ### HTML forms
 
