@@ -2,24 +2,41 @@
 
 Source: https://developer.mozilla.org/en-US/docs/Learn/HTML
 
+### Getting started
+
 ### HTML element
 
-<a href="">Hello world!</a>
+<a id="">Hello world!</a>
 
 The construct is called an element.
 <a> is the opening tag.
-"Hello world" is called content.
+"Hello world!" is called content.
 </a> is the closing tag.
-href="" is called an attribute.
+id="" is called an attribute.
 
-Elements can be nested. Elements without the closing tag and content are called empty elements. Attributes without a value are called boolean attributes.
+Elements can be nested.
+
+Block level elements: form a visible block.
+                      appears on a new line after the previous content.
+					  for example, <p>
+Inline elements: in block level elements.
+                 will not cause a new line.
+				 for example, <em>.
+
+Empty/void elements: elements without the closing tag and content.
+                     for example, <img>.
+
+Boolean attributes: attributes without a value.
+                    for example, <input type="text" disabled>.
+					
+Stopped at Omitting quotes around attribute values. https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
 
 ### HTML <head>
 
 The <head>'s job is to contain metadata about the document, data about the pages contents.
 
 Nesting elements into the <head> and filling them with metadata can optimize search results.
-(Open Graph Data)[http://ogp.me/] is a metaprotocol which provides richer metadata for social networks. Twitter has a very similar proprietary metadata.
+[Open Graph Data](http://ogp.me/) is a metaprotocol which provides richer metadata for social networks. Twitter has a very similar proprietary metadata.
 
 You can display a favicon (favorites icon) by setting the path of <link href=""> element in the <head> to an image.
 
