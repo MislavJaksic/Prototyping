@@ -149,6 +149,13 @@ Responsive images: images that answer both problems.
 
 [Responsive images tutorial](https://cloudfour.com/thinks/responsive-images-101-definitions/)
 
+## HTML tables
+
+### HTML table basics
+
+Table: made of rows and columns.
+       styling them is very important; apply CSS.
+
 ### HTML forms
 
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms
