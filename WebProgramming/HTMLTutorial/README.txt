@@ -98,6 +98,19 @@ Get familiar with browser [developer tools](https://developer.mozilla.org/en-US/
 
 ## Multimedia and embedding
 
+### Images in HTML
+
+Never display copyrighted image.
+
+<img>, <figure>: written in index.html.
+
+### Video and audio content
+
+<video>, <audio>: written in index.html.
+                  can have transcripts, <track>, made in [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
+
+### Other embedding technologies
+
 Never point to an image hosted by another website. Make sure you don't host copyrighted images.
 
 It is possible to add audio and video to a page. I don't intend to use it often and so I will not research it right away.
