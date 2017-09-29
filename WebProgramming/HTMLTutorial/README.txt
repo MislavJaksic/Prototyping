@@ -29,16 +29,24 @@ Empty/void elements: elements without the closing tag and content.
 Boolean attributes: attributes without a value.
                     for example, <input type="text" disabled>.
 					
-Stopped at Omitting quotes around attribute values. https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+Special chars: < is &lt;, > &gt;, " is &quot; and so on.
+
+### Metadata in HTML
 
 ### HTML <head>
 
-The <head>'s job is to contain metadata about the document, data about the pages contents.
+The <head>'s job is to contain metadata about the document, data about the page's contents.
 
-Nesting elements into the <head> and filling them with metadata can optimize search results.
-[Open Graph Data](http://ogp.me/) is a metaprotocol which provides richer metadata for social networks. Twitter has a very similar proprietary metadata.
+Metadata: charset,
+          author and description,
+	  Facebook and Twitter description/title/image,
+	  favorites icon,
+	  link CSS,
+	  set page language in <html>.
+	  
+[Open Graph Data](http://ogp.me/) is a metaprotocol which allows links to pages on Facebook to display images/titles/descriptions. Twitter has a very similar proprietary protocol.
 
-You can display a favicon (favorites icon) by setting the path of <link href=""> element in the <head> to an image.
+### HTML text
 
 ### HTML hyperlinks
 
