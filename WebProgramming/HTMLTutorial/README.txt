@@ -137,8 +137,12 @@ Stopped at Adding SVG to your pages
 
 ### Responsive images
 
-Resolution switching: different image size depending on the size of the browser.
-'srcset' provides alternative images, 'sizes' states screen size conditions under which a picture should be displayed. Once a conditions is met, all other are ignored.
+Art direction problem: how are you going to crop the image to fit the screen?
+
+Resolution switching problem: at what resolution do you switch to a smaller image size?
+
+Responsive images: images that answer both problems.
+                   in <img> attribute sizes="" sets conditions and srcset="" provides alternative images.
 
 Use developer tools to help you figure out resolution numbers to input into 'srcset' and 'sizes' attributes.
 
