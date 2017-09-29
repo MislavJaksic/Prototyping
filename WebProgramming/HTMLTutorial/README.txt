@@ -2,6 +2,8 @@
 
 Source: https://developer.mozilla.org/en-US/docs/Learn/HTML
 
+## Introduction
+
 ### Getting started (HTML elements)
 
 <a id="">Hello world!</a>
@@ -88,11 +90,11 @@ Advanced text elements: written in index.html.
 
 ### HTML debugging
 
-HTML parsing and interpreting is extremely permissive, meaning that mistakes cannot be automatically detected.
+HTML parsing and interpreting is extremely permissive and mistakes are rarely detected.
 
-Get familiar with browser developer tools: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools
+Get familiar with browser [developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools).
 
-HTML can be validated using: https://validator.w3.org/
+[HTML validator](https://validator.w3.org/)
 
 ## Multimedia and embedding
 
