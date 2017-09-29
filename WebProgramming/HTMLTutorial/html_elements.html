@@ -123,8 +123,13 @@
     
     <!-- Other embedding technologies: -->
     
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QEllLECo4OM" frameborder="0" allowfullscreen>
+    <iframe src="https://www.youtube.com/embed/QEllLECo4OM"
+            width="560" height="315"
+            allowfullscreen sandbox>
+      <p>Fallback content.</p>
     </iframe>
+  
+    <!-- Adding vector graphics: -->
     
     <img srcset="browser_chooses.jpg 320w,
                  between_these.jpg 480w,
