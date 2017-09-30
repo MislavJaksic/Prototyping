@@ -1,129 +1,144 @@
-/* Selects all <div> elements */
-div {
-  color: blue;
-}
-/* Selects all elements that have a value "first" in attribute class="" */
-.first {
-  font-weight: bold;
-}
-.done {
-  text-decoration: line-through;
-}
-/* Selects all elements that have a unique value "polite" in attribute id="" */
-#polite {
-  font-family: cursive;
-}
+/* Simple selectors: */
 
-/* Descendant selectors: */
-/* Selects all elements <p> that are nested somewhere wihin <section> */
-section p {
-  color: red;
-}
-/* Selects all elements <p> that are children of <section> */
-section > p {
-  background-color: yellow;
-}
-/* Selects all elements <p> that are sibling (on the same level) right next to <h2> */
-h2 + p {
-  text-transform: uppercase;
-}
-/* Selects all elements <p> that are sibling (on the same level) to <h2> */
-h2 ~ p {
-  border: 1px dashed black;
-}
+  /* Element selectors: */
+  
+    div { /* Selects all <div> */
+      color: blue;
+    }
+    
+  /* Class selectors: */
+    
+    .first { /* Selects elements that contain a value "first" in class="" */
+      font-weight: bold;
+    }
+    .done {
+      text-decoration: line-through;
+    }
+    
+  /* ID selectors: */
 
+    #polite { /* Selects elements that have a unique value "polite" in id="" */
+      font-family: cursive;
+    }
+
+  /* Combinators: */
+    
+    section p { /* Selects <p> anywhere within <section> */
+      color: red;
+    }
+    
+    section > p { /* Selects <p> that are direct children of <section> */
+      background-color: yellow;
+    }
+    
+    h2 + p { /* Selects <p> that are on next to <h2> and on the same level as <h2> (siblings) */
+      text-transform: uppercase;
+    }
+    
+    h2 ~ p { /* Selects <p> that are on the same level (siglings) as <h2> */
+      border: 1px dashed black;
+    }
 
 /*Attribute selectors: */
-/* All elements with the attribute "data-vegetable"*/
-[data-vegetable] {
-  color: green;
-}
-/* All elements with the attribute "data-vegetable" with the exact value "liquid" */
-[data-vegetable="liquid"] {
-  background-color: goldenrod;
-}
-/* All elements with the attribute "data-vegetable", containing the value "spicy" */
-[data-vegetable~="spicy"] {
-  color: red;
-}
-/* Classic usage for language selection */
-[lang|=fr] {
-  font-weight: bold;
-}
-/* All elements with the attribute "data-quantity", for which
-   the value starts with "optional" */
-[data-quantity^="optional"] {
-  opacity: 0.5;
-}
-/* All elements with the attribute "data-quantity", for which
-   the value ends with "kg" */
-[data-quantity$="kg"] {
-  font-weight: bold;
-}
-/* All elements with the attribute "data-vegetable" containing
-   the value "not spicy" are turned back to green */
-[data-vegetable*="not spicy"] {
-  color: green;
-}
-
+  
+  /* Presence and value attribute selectors: */
+  
+    [data-vegetable] { /* Selects elements with data-vegetable="" */
+      color: green;
+    }
+    
+    [data-vegetable="liquid"] { /* Selects elements with data-vegetable="" with the exact value "liquid" */
+      background-color: goldenrod;
+    }
+    
+    [data-vegetable~="spicy"] { /* Selects elements with data-vegetable="", containing the value "spicy" */
+      color: red;
+    }
+  
+  /* Substring value attribute selectors: */
+  
+    [lang|=fr] { /* Selects elements with lang="" with the exact value "fr" or "fr-" */
+      font-weight: bold;
+    }
+    
+    [data-quantity^="optional"] { /* Selects elements with data-quantity="" whose value starts with "optional" */
+      opacity: 0.5;
+    }
+    
+    [data-quantity$="kg"] { /* Selects elements with data-quantity="" whose value ends with "kg" */
+      font-weight: bold;
+    }
+    
+    [data-vegetable*="not spicy"] { /* Selects elements with data-vegetable="" containing the value "not spicy" */
+      color: green;
+    }
 
 /* Pseudo-selectors: */
-/* Visited links are selected */
-a:visited {
-  color: red;
-}
-/* Hovered, activated or focused link are selected */
-a:hover,
-a:active,
-a:focus {
-  color: darkred;
-  text-decoration: none;
-}
+
+  a:visited { /* Visited links are selected */
+    color: red;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus { /* Hovered, activated or focused link are selected */
+    color: darkred;
+    text-decoration: none;
+  }
+  
 /* Pseudo-element: */
-/* All elements with an attribute "href", which values start with "http", will be added an arrow after it */
-[href^=http]::after {
-  content: '⤴';
-}
+  
+  [href^=http]::after { /* Selects elements with href="" whose values start with "http", will be added an arrow after it */
+    content: '⤴';
+  }
 
 
 /* Combinators: */
-table {
-  font: 1em sans-serif;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* All <td>s within a <table> and all <th>s within a <table> */
-table td, table th {
-  border : 1px solid black;
-  padding: 0.5em 0.5em 0.4em;
-}
-/* All <th>s within <thead>s that are within <table>s */
-table thead th {
-  color: white;
-  background: black;
-}
-/* All <td>s preceded by another <td>, within a <tbody>, within a <table> */
-table tbody td + td {
-  text-align: center;
-}
-/* All <td>s that are a last child, within a <tbody>, within a <table> */
-table tbody td:last-child {
-  text-align: right
-}
-/* All <th>s, within a <tfoot>s, within a <table> */
-table tfoot th {
-  text-align: right;
-  border-top-width: 5px;
-  border-left: none;
-  border-bottom: none;
-}
-/* All <td>s preceded by a <th>, within a <table> */
-table th + td {
-  text-align: right;
-  border-top-width: 5px;
-  color: white;
-  background: black;
-}
+
+  table { /* Not a combinator! */
+    font: 1em sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  table td, table th { /* Selects <td> anywhere within <table> AND selects <th> anywhere within <table> */
+    border : 1px solid black;
+    padding: 0.5em 0.5em 0.4em;
+  }
+  
+  table thead th { /* Selects <th> anywhere within <thead>, anywhere within <table> */
+    color: white;
+    background: black;
+  }
+  
+  table tbody td + td { /* Selects <td> preceded by another <td>, anywhere within <tbody>, anywhere within <table> */
+    text-align: center;
+  }
+  
+  table tbody td:last-child { /* Selects <td> that are a last child, anywhere within <tbody>, anywhere within <table> */
+    text-align: right
+  }
+  
+  table tfoot th { /* Selects <th>, anywhere within <tfoot>, anywhere within <table> */
+    text-align: right;
+    border-top-width: 5px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  table th + td { /* Selects <td> preceded by a <th>, anywhere within <table> */
+    text-align: right;
+    border-top-width: 5px;
+    color: white;
+    background: black;
+  }
+  
+/* Multiple selectors: */
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, 'sans serif';
+  }
+
 /* All pseudo-elements "before" <td>s that are a last child,
    appearing within elements with a class of "with-currency" that
    also have an attribute "lang" with the value "en-US" */
