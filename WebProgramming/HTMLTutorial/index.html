@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!-- Set lang -->
+  <head>
+    <meta charset="utf-8"> <!-- Set charset -->
+    
+    <meta name="author" content="Me!">
+    <meta name="description" content="Keywords used for Search Optimization">
+    
+    <meta property="og:image" content="images/mozilla_logo_smaller.png"> <!-- When linked to on Facebook, the og;title, image and description appear in the news feed -->
+    <meta property="og:description" content="Description on Facebook">
+    <meta property="og:title" content="Page lnik title on Facebook">
+    <meta name="twitter:title" content="Page link title on Twitter"> <!-- Similar to og;, but for Twitter -->
+    
+    <title>TabText</title>
+    
+    <link rel="shortcut icon" href="images/checkmark_favorites_icon.png" type="image/x-icon"> <!-- There are many types of rel="" -->
+    
+    <link href="styles/minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  
+    <h1>Biggest heading</h1>
+    
+    <h6>Smallest heading</h6>
+    
+    <p>
+      Paragraph.<br>
+        Break line in paragraph.
+    </p>
+    
+    <ul>
+      <li>Unordered list</li>
+      <li>Bullet points</li>
+    </ul>
+    
+    <ol>
+      <li>Ordered list</li>
+      <li>Numerical points</li>
+    </ol>
+    
+    <p>
+      <em>Italic text</em> next to <strong>bold text</strong>
+    </p>
+    
+    <p>
+      <a href="https://www.mozilla.org/en-US/"
+         title="Hover over text"
+         target="_blank">                      <!-- "_blank" opens up a link in a new tab -->
+         Hyperlink to Mozilla</a><br>
+       You can even turn pictures or many elements into a single, giant hyperlink.
+    </p>
+    
+    <p>
+      <a href="another_page/second_page.html">Link to a page I made</a>
+    </p>
+    
+    <!-- Advanced text elements: -->
+    
+    <dl>
+      <dt>Description term in description list</dt>
+      <dd>Description description</dd>
+      <dt>Description term</dt>
+      <dd>Description description</dd>
+    </dl>
+    
+    <blockquote cite="source_link">
+      A block quote from a source.
+    </blockquote>
+    
+    <q cite="source_link">Inline quotation.</q>
+    
+    <abbr title="Hover over text">
+      Underlined text with hoverover text.
+    </abbr>
+    
+    <address>
+      Address information.
+    </address>
+    
+    <p>
+      Subscript: C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
+    </p>
+    
+    <p>
+      Superscript: C<sup>8</sup>H<sup>10</sup>N<sup>4</sup>O<sup>2</sup>
+    </p>
+    
+    <time datetime="2016-01-20">20 January 2016</time> <!-- A computer readable time is in an attribute -->
+    
+    <!-- Image in HTML: -->
+    
+    <p>
+      <img src="images/checkmark_favorites_icon.png"
+           alt="You will see it if the pic doesn't load"
+           width="200"
+           height="220"
+           title="hoverover_text">
+    </p>
+    
+    <p>
+      <figure>
+        <img src="images/mozilla_logo_smaller.png" 
+             alt="Explain why is the image here; displayed when the image cannot be loaded."
+             title="hoverover_text">
+        <figcaption>Text written below the image</figcaption>
+      </figure>
+    </p>
+    
+    <!-- Video and audio content: -->
+    
+    <!-- Never include the attribute autoplay/loop -->
+    <p>
+      <video width="400" height="400"
+             muted controls          
+             poster="image_link"
+             preload="auto">
+        <source src="first_video_source" type="video/mp4">
+        <source src="second_video_source" type="video/webm">
+        <p>Fallback content is the video doesn't load.</p>
+      </video>
+    </p>
+    
+    <p>
+      <audio controls>
+        <source src="first_video_source" type="audio/mp3">
+        <source src="second_video_source" type="audio/ogg">
+        <p>Audio is the same as video but without visual components.</p>
+      </audio>
+    </p>
+    
+    <!-- Video and audio elements can have <track> element with a transcript (subtitles) -->
+    
+    <!-- Other embedding technologies: -->
+    <p>
+      <iframe src="https://www.youtube.com/embed/QEllLECo4OM"
+              width="560" height="315"
+              allowfullscreen sandbox>
+        <p>Fallback content.</p>
+      </iframe>
+    </p>
+    
+    <!-- Adding vector graphics: -->
+  
+  <!-- TODO -->
+  
+    <!-- Responsive images: -->
+    
+    <!-- srcset="": alternative image resolutions -->
+    <!-- sizes="": screen size conditions point to image resolution in srcset -->
+      <!-- Once a conditions is met, all others are ignored --> 
+    <p>
+      <img srcset="browser_chooses.jpg 320w,  
+                   between_these.jpg   480w,
+                   images.jpg          800w"
+           sizes="(max-width: 320px) 280px, 
+                  (max-width: 480px) 440px, 
+                                     800px"
+           src="images/mozilla_logo_smaller.png"
+           alt="Alternative resolution demo">
+    </p>
+    
+    <p>    
+      <picture>                            <!-- Solves the art direction problem -->
+        <source media="(max-width: 799px)"                       
+                srcset="different_picture_due_to_resolution.jpg"> <!-- media="": condition -->
+        <source media="(min-width: 800px)"
+                srcset="default_picture.jpg">
+        <img src="default_picture.jpg"
+             alt="A cropped instead of scaled down picture">
+      </picture>
+    </p>
+    
+    <!-- HTML tables: -->
+  
+    <table>
+      <tr> <!-- Table header -->
+        <th>First column</th>
+        <th>Second column</th>
+        <th>Third column</th>
+      </tr>
+      <tr> <!-- Table row -->
+        <td rowspan="2">First row, first column</td> <!-- Table data -->
+        <td colspan="2">First row, second column</td>
+      </tr>
+      <tr>
+        <td>https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics</td>
+        <td>Tables have many more formatting options</td>
+      </tr>
+    </table>
+    
+  </body>
+</html>

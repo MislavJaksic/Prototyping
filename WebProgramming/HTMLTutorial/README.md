@@ -1,50 +1,50 @@
 ## HTML
 
-Source: https://developer.mozilla.org/en-US/docs/Learn/HTML
+[Source](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 
-Solving common HTML problems: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto
+[Solving common HTML problems](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto)
 
-Special character codes: https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+[Special character codes](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 
 ## Introduction
 
 ### Getting started (HTML elements)
 
-<a id="">Hello world!</a>
+&lta id=""&gtHello world!&lt/a&gt
 
 The construct is called an element.
-<a> is the opening tag.
+&lta&gt is the opening tag.
 "Hello world!" is called content.
-</a> is the closing tag.
+&lt/a&gt is the closing tag.
 id="" is called an attribute.
 
 Elements can be nested.
 
 Block level elements: form a visible block.
                       appears on a new line after the previous content.
-                      for example, <p>
+                      for example, &ltp&gt
 Inline elements: in block level elements.
                  will not cause a new line.
-                 for example, <em>.
+                 for example, &ltem&gt.
 
 Empty/void elements: elements without the closing tag and content.
-                     for example, <img>.
+                     for example, &ltimg&gt.
 
 Boolean attributes: attributes without a value.
-                    for example, <input type="text" disabled>.
+                    for example, &ltinput type="text" disabled&gt.
                     
-Special chars: < is &lt;, > &gt;, " is &quot; and so on.
+Special chars: &lt is &lt;, &gt &gt;, " is &quot; and so on.
 
 ### Metadata in HTML (Head)
 
-<head>: contains metadata about the document, data about the page's contents.
+&lthead&gt: contains metadata about the document, data about the page's contents.
 
 Metadata: charset,
           author and description,
           Facebook and Twitter description/title/image,
           favorites icon,
           link CSS,
-          set page language in <html>.
+          set page language in &lthtml&gt.
       
 [Open Graph Data](http://ogp.me/) is a metaprotocol which allows links to pages on Facebook to display images/titles/descriptions. Twitter has a very similar proprietary protocol.
 
@@ -54,19 +54,19 @@ Text elements: in index.html.
 
 ### HTML hyperlinks
 
-Anchor: <a href="website_link" title="hoverover_text">link_name</a>
+Anchor: &lta href="website_link" title="hoverover_text"&gtlink_name&lt/a&gt
         any block of elements can be made into a hyperlink.
     
 Document fragment: link to a specific part of the page, not just the top.
                    assigned with an id="" attribute.
-                   use <a href="folder/web_page.html#Address"> on <h2 id="Address">City, Street, Number</h2>.
+                   use &lta href="folder/web_page.html#Address"&gt on &lth2 id="Address"&gtCity, Street, Number&lt/h2&gt.
 
 Tips: use clear link words, don't repeat the URI,
       use relative links when you can,
       let readers know what is behind the link (download, file size, ...),
-      use <a href="" download=""> download attribute for downloads.
+      use &lta href="" download=""&gt download attribute for downloads.
 
-Email: use <a href="mailto:email:_address"> mailto schema.
+Email: use &lta href="mailto:email:_address"&gt mailto schema.
 
 ### Advanced text
 
@@ -74,21 +74,21 @@ Advanced text elements: written in index.html.
 
 ### HTML document and website structure
 
-<header>: a big strip across the top. Main common information about a website usually stays here.
-<nav>: navigation bar is where links to the site's main sections are located.
-<main>: for content that is unique to this web page
-        <main> subsections: <article>, <section>, and <div> elements.
-          <article>: encloses a block of related content.
-          <section>: similar to <article>, but wrapps one functionality
-<aside>: peripheral info, links, quotes are; inside <main>.
-<footer>: across the bottom of the page; fine print, copyright notices, or contact info; may be used for SEO purposes.
+&ltheader&gt: a big strip across the top. Main common information about a website usually stays here.
+&ltnav&gt: navigation bar is where links to the site's main sections are located.
+&ltmain&gt: for content that is unique to this web page
+        &ltmain&gt subsections: &ltarticle&gt, &ltsection&gt, and &ltdiv&gt elements.
+          &ltarticle&gt: encloses a block of related content.
+          &ltsection&gt: similar to &ltarticle&gt, but wrapps one functionality
+&ltaside&gt: peripheral info, links, quotes are; inside &ltmain&gt.
+&ltfooter&gt: across the bottom of the page; fine print, copyright notices, or contact info; may be used for SEO purposes.
 
-<div>, <span>: non semantic elements; use only if you have to.
+&ltdiv&gt, &ltspan&gt: non semantic elements; use only if you have to.
                uniquely mark them with class"" attribute value.
                for example, a shopping cart would be wrapped with div.
            
-<br>: break line
-<hr>: horizontal rule
+&ltbr&gt: break line
+&lthr&gt: horizontal rule
 
 [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
@@ -106,20 +106,20 @@ Get familiar with browser [developer tools](https://developer.mozilla.org/en-US/
 
 Never display copyrighted image.
 
-<img>, <figure>: in index.html.
+&ltimg&gt, &ltfigure&gt: in index.html.
 
 ### Video and audio content
 
-<video>, <audio>: in index.html.
-                  can have transcripts, <track>, made in [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
+&ltvideo&gt, &ltaudio&gt: in index.html.
+                  can have transcripts, &lttrack&gt, made in [WebVTT](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).
 
 ### Other embedding technologies
 
-<iframe>: can embed Youtube video, Google Maps and many other services. Go to a website press Share->Embed to get the link.
+&ltiframe&gt: can embed Youtube video, Google Maps and many other services. Go to a website press Share-&gtEmbed to get the link.
           set src="" with JavaScript after the rest of the page has been loaded to improve laoding time.
 
-<iframe> security risks and solutions:
-- clickjacking: embed an invisible <iframe> to steal user interaction
+&ltiframe&gt security risks and solutions:
+- clickjacking: embed an invisible &ltiframe&gt to steal user interaction
 - set CSP directive to forbid your page from being embedded
 - embed content only if necessary.
 - use HTTPS, for which you need a certificate; get one from [Letsencrypt](https://letsencrypt.org/)
@@ -130,10 +130,10 @@ Never display copyrighted image.
 
 SVG, an XML based language to describe vector images.
 
-<svg>: element for vector images.
+&ltsvg&gt: element for vector images.
        instead of hard coding them, use an editor such as [Inkscape](https://inkscape.org/en/) or [Illustrator].
-       <circle>, <rect>: create simple objects.
-       <feColourMatrix>, <animate>, <mask>: advanced SVG features.
+       &ltcircle&gt, &ltrect&gt: create simple objects.
+       &ltfeColourMatrix&gt, &ltanimate&gt, &ltmask&gt: advanced SVG features.
 
 [Prepare Inkscape for the web](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html)
 
@@ -146,10 +146,10 @@ Art direction problem: how are you going to crop the image to fit the screen?
 Resolution switching problem: at what resolution do you switch to a smaller image size?
 
 Responsive images: images that answer both problems.
-                   in <img> attribute sizes="" sets conditions and srcset="" provides alternative images.
+                   in &ltimg&gt attribute sizes="" sets conditions and srcset="" provides alternative images.
                    use the attributes to save bandwidth and loading time.
                    use [developer tools](https://developer.mozilla.org/en/US/docs/Learn/Common_questions/What_are_browser_developer_tools) to help you figure out the correct resolution numbers to input into 'srcset' and 'sizes' attributes.
-                   art direction is solved with the <picture> element, which wraps <img>.
+                   art direction is solved with the &ltpicture&gt element, which wraps &ltimg&gt.
 
 [Responsive images tutorial](https://cloudfour.com/thinks/responsive-images-101-definitions/)
 
@@ -160,9 +160,9 @@ Responsive images: images that answer both problems.
 Table: made of rows and columns.
        styling them is very important; apply CSS.
 
-<table>: in index.html.
+&lttable&gt: in index.html.
 
-<col>, <colgroup>: unexplored.
+&ltcol&gt, &ltcolgroup&gt: unexplored.
 
 ### Advanced table features
 
@@ -180,16 +180,16 @@ Label3: TextBox3
 
 Widget: make up a form.
         label, text fields, boxes, buttons, checkboxes, radio buttons.
-        <div>, <p> or <ul> are often used to group them up.
+        &ltdiv&gt, &ltp&gt or &ltul&gt are often used to group them up.
         
-<form>: the main element
-  <label>
+&ltform&gt: the main element
+  &ltlabel&gt
     for="" links the label to another widget's id=""
-  <input>: text box; different types depending on input
-  <textarea>: large text box
+  &ltinput&gt: text box; different types depending on input
+  &lttextarea&gt: large text box
     id="" linked to a label
     name="" names the data
-  <button>: types: submit: send data
+  &ltbutton&gt: types: submit: send data
                    reset: reset the form (don't do it!)
                    button: implement a custom JavaScript action
                    
@@ -201,11 +201,11 @@ Demonstrated in index.html.
 
 Common attributes: autofocus: boolean attribute, should the element have a focus upon the page being loaded?
                    disabled: can the user interact with the element?
-                   form: form with which the widget is associated; must equal to the id="" of the <form>.
+                   form: form with which the widget is associated; must equal to the id="" of the &ltform&gt.
                    name: element name, used when submitting data.
                    value: the initial value.
                    
-<input>: readonly="", disabled="", placeholder="", size="", maxlength="", spellcheck=""
+&ltinput&gt: readonly="", disabled="", placeholder="", size="", maxlength="", spellcheck=""
          type="" can radically change the widget.
            type="text"     is a text field.
            type="email"    is an email text field.
@@ -214,24 +214,24 @@ Common attributes: autofocus: boolean attribute, should the element have a focus
            type="tel"      is a phone number field.
            type="url"      is a URI field.
            
-<textarea>: multiline text field.
+&lttextarea&gt: multiline text field.
             cols="", rows="" determines the size.
             wrap="" says how the text is wrapped.
             content between the tags is considered the initial value.
             
-<select>: dropdown menu, multiple choice, autocomplete option.
+&ltselect&gt: dropdown menu, multiple choice, autocomplete option.
           in index.html.
           
-<input>: special checked widgets. 
+&ltinput&gt: special checked widgets. 
            checked: boolean attribute, sets the initial state
          type="radio"
          type="checkbox"
          
-<button>: types: submit: send data
+&ltbutton&gt: types: submit: send data
                  reset: reset the form (don't do it!)
                  button: implement a custom JavaScript action
                  
-<input>: advanced types.
+&ltinput&gt: advanced types.
            type="number" has step="", max="" and min="".
            
            type="range" is a slider with step="", max="" and min="".
@@ -247,9 +247,9 @@ Common attributes: autofocus: boolean attribute, should the element have a focus
            type="file" to send files to the server.
            
            type="hidden" used to send data to the user, but not display it.
-           type="image" <img>, but behaves like a button.
+           type="image" &ltimg&gt, but behaves like a button.
 
-<meter> and <progress>:       
+&ltmeter&gt and &ltprogress&gt:       
 
 ### Sending form data
 
