@@ -9,6 +9,7 @@ let answer = -1;
 let guess_button = document.querySelector("#submit_guess_buttonID"); //-> find element by id="" value
 
 function CheckGuess() {
+  IncreaseGuessCount()
   let guess = GetGuess()
   let result = CompareGuessWithAnswer(guess)
   DisplayGuessAndResult(guess, result)
@@ -16,13 +17,17 @@ function CheckGuess() {
   IsDefeat()
 }
 
+function IncreaseGuessCount() {
+  count_guesses += 1;
+}
+
 function GetGuess() {
   let guess_textbox = document.querySelector("#guessID");
-  return parseInt(guess_textbox.value);
+  return parseInt(guess_textbox.value);                  //-> get value
 }
 
 function CompareGuessWithAnswer(guess) {
-  if (guess == answer){
+  if (guess === answer){
     return victory_result;
   }
   if (guess > answer){
@@ -40,9 +45,9 @@ function DisplayGuessAndResult(guess, result) {
 }
 
 function IsVictory(result) {
-  if (result == victory_result) {
+  if (result === victory_result) {
     guess_button.textContent = "Victory!";
-    guess_button.disabled = true;
+    guess_button.disabled = true;         //-> deactivate button
     AppendTextToID(answer, "answerID")
     return true
   }
@@ -51,6 +56,7 @@ function IsVictory(result) {
 
 function IsDefeat() {
   if (OverMaxGuesses()){
+    guess_button.textContent = "Guess limit reached";
     guess_button.disabled = true;
     return true
   }
@@ -65,16 +71,14 @@ function OverMaxGuesses() {
 }
 
 function GenerateAnswer() {
-  let zero_to_one = Math.random();
+  let zero_to_one = Math.random(); //-> generate a random number
   let one_to_hundred = zero_to_one * 100;
   answer = Math.floor(one_to_hundred) + 1;
-  
-  //AppendTextToID(answer, "answerID") //No cheating!
 }
 
 function AppendTextToID(text, id) {
   let element = document.querySelector("#" + id);
-  element.textContent += text;
+  element.textContent += text;                   //-> add text
 }
 
 GenerateAnswer();

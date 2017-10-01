@@ -117,40 +117,46 @@ Functions: exist in CSS as property values.
 
 ### Cascade and inheritance
 
-In review: stopped here!!! !!! !!!
+Cascade: when two styling properties conflict (for example, about color), it determines which one wins.
+         governed by three factors (earlier ones overrule later ones):
+           1) Importance: don"t use the !important keyword unless you have to
+           2) Specificity: ID selectors are the most specific, then class and finally element selectors.
+                [Measured in points](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
+           3) Source order: rules written later in the stylesheet win.
 
-Determines which CSS rule wins and gets applied to an element. This is governed by three factors (earlier ones
-overrule later ones):
+Inheritance: determines which property values applied to a parent element will be also applied by their children.
+             three special property values: inherit: explicit inheritance.
+                                            initial: sets the value to a value in the browser's default style sheet.
+                                            unset: resets the property to its natural value (acts like inherit, otherwise like initial).
 
-1) Importance: don"t use the !important keyword unless you have to
-2) Specificity: ID selectors are the most specific, then class and finally element selectors.
-3) Source order: rules written later in the stylesheet win.
-
-### CSS inheritance
-
-Determines which property values applied to an element will be inherited by that element"s children.
-
-Three special values alter the behaviour: inherit, initial and unset.
-
+Not demonstrated in index.html.
+                                            
 ### The box model
 
-Each element is represented as a rectangular box, with the box"s content, padding, border, and margin built up
-around one another like the layers of an onion. As a browser renders a web page layout, it works out what 
-styles are applied to the content of each box.
-
-width and height
-
-padding
-
-border
-
-margin
+Box properties: every element is structured as a box.
+                margin: pushes up against other boxes.
+                border: between the padding and the margin. Invisible by default (border: 0).
+                padding: between content and the border.
+                width and height: of the content box.
+                
+Advanced manipulation: overflow: controls what ahppens when the content doesn't fit the box and overflows.
+                       background clip: adjust to where will the background box extend.
+                       outline: a border, but drawn inside the margin.
+                
+CSS boxes: the type of box is determined by display:.
+           common display: values are: block, inline and inline-block.
+           
+Not demonstrated in index.html.
 
 ### CSS debugging
 
 Debugging can be done by using browser developer tools.
 
 CSS validator: http://jigsaw.w3.org/css-validator/
+
+### Exercise
+
+Didn't complete it. https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension
 
 ## Styling text
 
