@@ -126,9 +126,9 @@ Event handler properties: .onclick, .onfocus, .onblur, .ondoubleclick, .onmouseo
                             aim to use them when you can as they are more powerful and modern.
 
 Event object: passed to event handler functions as a parameter.
+              catching the event object in an event handler is optional.
               [properties](https://developer.mozilla.org/en-US/docs/Web/API/Event) such as .target.
-              
-preventDefault() to prevent, for example, forms from being submited if validation fails.
+              preventDefault() to prevent, for example, forms from being submited if validation fails.
 
 Event bubbling and capture: what happens when two handlers of the same event type are activated on one element.
                             in capture phase: browser checks if the element's outer-most ancestor has an event handler registered and if so, runs it.
@@ -142,6 +142,9 @@ Event delegation: set an event handler on a parent and have it activate when any
                   useful with lists.
                   [how it works](https://davidwalsh.name/event-delegate)
                   
+[Event bubbling/capture](https://www.quirksmode.org/js/events_order.html)
+[Accessing event objects](https://www.quirksmode.org/js/events_access.html)
+                  
 ## Introducing JavaScript objects
 
 ### JavaScript object basics
@@ -150,15 +153,72 @@ Object: declare with {}.
         made up of properties declared with _propertyName: _value.
         and made up of methods declared with _propertyName: _function.
         access using (.) notation or [] notation.
-        "this" is used to refer to the currec tobject.
+        "this" is used to refer to the current object.
         
 ### Object-oriented JavaScript for beginners
 
-Stopped here. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+Objects encapsulate data inside a namespace.
 
-Quite simple.
+Generic object type: in other languages it is called a class.
+                     objects are instantiated from it using a constructor function.
+                     can be inherited and can inherit.
+                     
+Constructor function: a function like any other, but invoked with "new" keyword.
+                      use "this" keyword to bind the data to the object instance.
 
 ### Object prototypes
+
+Prototype object: similar to a class, a template.
+                  part of the prototype (inheritance) chain.
+                    methods and properties are accessed by "walking up" the prototype chain, they are not copied!
+                    example: my_obj.help() -> check if .help() is defined in my_object, if not, go up the
+                             chain to it't prototype my_proto and it it is not defined there, go further up
+                  
+Manipulating prototypes: strange.
+                  
+### Inheritance in JavaScript
+
+Prototypal inheritance: called delegation.
+                        use parent_constructor.call() inside the child_constructor.
+                          .call() calls the parent "constructor"
+                        
+### Working with JSON
+
+JSON: JavaScript Object Notation
+
+Stopped here: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
               

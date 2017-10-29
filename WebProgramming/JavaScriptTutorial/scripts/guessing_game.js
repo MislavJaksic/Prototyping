@@ -1,12 +1,15 @@
 // Comment
 /* Comment */
-const max_guesses = 10;
+const max_guesses = 8;
 const victory_result = "is correct!";
 
 let count_guesses = 0;
 let answer = -1;
+let answerShown = false
 
 let guess_button = document.querySelector("#submit_guess_buttonID"); //-> find element by id="" value
+
+let cheat_button = document.querySelector("#cheat_buttonID");
 
 function CheckGuess() {
   IncreaseGuessCount()
@@ -81,7 +84,16 @@ function AppendTextToID(text, id) {
   element.textContent += text;                   //-> add text
 }
 
+function ShowAnswer(){
+  if (answerShown === false){
+    AppendTextToID("Shame on you you big cheater!", "answerID")
+    answerShown = true
+    guess_button.textContent = "Cheater!";
+    guess_button.disabled = true;         //-> deactivate button
+  }
+}
 GenerateAnswer();
 
 guess_button.addEventListener("click", CheckGuess); //-> listens to when the button is clicked
                                                     //-> The construct that listens is an EventListener, CheckGuess in the EventHandler
+cheat_button.addEventListener("click", ShowAnswer);
