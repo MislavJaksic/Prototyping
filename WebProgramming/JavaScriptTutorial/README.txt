@@ -168,13 +168,14 @@ Constructor function: a function like any other, but invoked with "new" keyword.
 
 ### Object prototypes
 
-Prototype object: similar to a class, a template.
-                  part of the prototype (inheritance) chain.
+Prototype object: each object inherits properties and function from a prototype object.
+                  a prototype object can inherit from another prototype object, forming a prototype chain.
+                  object prototype =! prototype property.
                     methods and properties are accessed by "walking up" the prototype chain, they are not copied!
-                    example: my_obj.help() -> check if .help() is defined in my_object, if not, go up the
-                             chain to it't prototype my_proto and it it is not defined there, go further up
-                  
-Manipulating prototypes: strange.
+                    example: child_obj.help() -> check if .help() is defined in child_object, if not, go up the
+                             chain and if check it .help() is defined in parent_obj, if not check grandparent_obj...
+
+JavaScript inheritance system allows function to be implied, overridden and altered just like in any other language.
                   
 ### Inheritance in JavaScript
 
