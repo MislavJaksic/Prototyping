@@ -1,5 +1,10 @@
 ## Prototyping
 
-A prototype is the least amount of throw away code that has to be written for the purpose of learning how a programming
-tool works. Prototyping greatly improves the quality of construction and design of software as it gives insight into how
-the problem is to be solved.
+A prototype is, according to Code Complete, is "... the absolute minimum amount of throwaway code that's
+needed to answer a specific design question." Folders in this repository are those that are not yet ready
+to be integrated into the Knowledge Repository.
+
+### Web programming
+
+At the most basic level it consists of HTML, CSS and JavaScript, but also includes other technologies and
+server side programming.

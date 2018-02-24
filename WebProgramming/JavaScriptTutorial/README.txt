@@ -188,38 +188,4 @@ Prototypal inheritance: called delegation.
 JSON: JavaScript Object Notation
 
 Stopped here: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
+     
