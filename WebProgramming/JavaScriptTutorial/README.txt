@@ -188,4 +188,27 @@ Prototypal inheritance: called delegation.
 JSON: JavaScript Object Notation
 
 Stopped here: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
-     
+
+
+## Client side web API
+
+### Introduction to web API
+
+Browser API, such as Geolocation or Canvas : https://developer.mozilla.org/en-US/docs/Web/API
+Third party API, such as Twitter : https://www.programmableweb.com/category/all/apis
+
+APIs: use callback function to be async, or Promises
+      have an entry point, such as an object or property
+      
+### Manipulating documents
+
+Window object: browser tab into which the web page is loaded
+Navigator object: represents the state and identity of the browser
+Document object: actual page loaded into the window
+
+DOM tree: made up of nodes
+          can manipulate the page by creating, deleting and altering nodes
+
+### Fetching data from the server
+
+Stopped here: 
