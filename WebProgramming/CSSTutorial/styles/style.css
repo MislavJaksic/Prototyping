@@ -1,20 +1,20 @@
 /* Simple selectors: */
 
   /* Element selectors: */
-  
+
     div { /* Selects all <div> */
       color: blue;
     }
-    
+
   /* Class selectors: */
-    
+
     .first { /* Selects elements that contain a value "first" in class="" */
       font-weight: bold;
     }
     .done {
       text-decoration: line-through;
     }
-    
+
   /* ID selectors: */
 
     #polite { /* Selects elements that have a unique value "polite" in id="" */
@@ -22,53 +22,53 @@
     }
 
   /* Combinators: */
-    
+
     section p { /* Selects <p> anywhere within <section> */
       color: red;
     }
-    
+
     section > p { /* Selects <p> that are direct children of <section> */
       background-color: yellow;
     }
-    
+
     h2 + p { /* Selects <p> that are on next to <h2> and on the same level as <h2> (siblings) */
       text-transform: uppercase;
     }
-    
+
     h2 ~ p { /* Selects <p> that are on the same level (siglings) as <h2> */
       border: 1px dashed black;
     }
 
 /*Attribute selectors: */
-  
+
   /* Presence and value attribute selectors: */
-  
+
     [data-vegetable] { /* Selects elements with data-vegetable="" */
       color: green;
     }
-    
+
     [data-vegetable="liquid"] { /* Selects elements with data-vegetable="" with the exact value "liquid" */
       background-color: goldenrod;
     }
-    
+
     [data-vegetable~="spicy"] { /* Selects elements with data-vegetable="", containing the value "spicy" */
       color: red;
     }
-  
+
   /* Substring value attribute selectors: */
-  
+
     [lang|=fr] { /* Selects elements with lang="" with the exact value "fr" or "fr-" */
       font-weight: bold;
     }
-    
+
     [data-quantity^="optional"] { /* Selects elements with data-quantity="" whose value starts with "optional" */
       opacity: 0.5;
     }
-    
+
     [data-quantity$="kg"] { /* Selects elements with data-quantity="" whose value ends with "kg" */
       font-weight: bold;
     }
-    
+
     [data-vegetable*="not spicy"] { /* Selects elements with data-vegetable="" containing the value "not spicy" */
       color: green;
     }
@@ -78,16 +78,16 @@
   a:visited { /* Visited links are selected */
     color: red;
   }
-  
+
   a:hover,
   a:active,
   a:focus { /* Hovered, activated or focused link are selected */
     color: darkred;
     text-decoration: none;
   }
-  
+
 /* Pseudo-element: */
-  
+
   [href^=http]::after { /* Selects elements with href="" whose values start with "http", will be added an arrow after it */
     content: '⤴';
   }
@@ -100,41 +100,41 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
+
   table td, table th { /* Selects <td> anywhere within <table> AND selects <th> anywhere within <table> */
     border : 1px solid black;
     padding: 0.5em 0.5em 0.4em;
   }
-  
+
   table thead th { /* Selects <th> anywhere within <thead>, anywhere within <table> */
     color: white;
     background: black;
   }
-  
+
   table tbody td + td { /* Selects <td> preceded by another <td>, anywhere within <tbody>, anywhere within <table> */
     text-align: center;
   }
-  
+
   table tbody td:last-child { /* Selects <td> that are a last child, anywhere within <tbody>, anywhere within <table> */
     text-align: right
   }
-  
+
   table tfoot th { /* Selects <th>, anywhere within <tfoot>, anywhere within <table> */
     text-align: right;
     border-top-width: 5px;
     border-left: none;
     border-bottom: none;
   }
-  
+
   table th + td { /* Selects <td> preceded by a <th>, anywhere within <table> */
     text-align: right;
     border-top-width: 5px;
     color: white;
     background: black;
   }
-  
+
 /* Multiple selectors: */
-  
+
   h1, h2, h3, h4, h5, h6 {
   font-family: helvetica, 'sans serif';
   }
